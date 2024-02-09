@@ -69,6 +69,7 @@ button:hover{
 }
 
 .successMessageContainer{
+  display:none;
     margin: auto;
     margin-top: 150px;
     margin-bottom: 20px;
