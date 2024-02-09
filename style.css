@@ -8,6 +8,7 @@ body{
 }
 
 .container{
+    max-width: 955px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -15,8 +16,6 @@ body{
     margin: auto;
     margin-top: 150px;
     margin-bottom: 20px;
-    width: 50vw;
-    height: 70vh;
     border-radius: 30px;
     padding-left: 30px;
 }
@@ -24,7 +23,7 @@ body{
 .container div>img{
     width: 310px;
     padding-top: 30px; 
-  position: fixed;
+    margin-bottom: 30px;  
 }
 
 h1{
@@ -37,6 +36,9 @@ ul{
     text-align: justify;
     font-weight: 400;
 
+}
+label{
+    font-weight: bold;
 }
 #error{
     color:red;
@@ -55,8 +57,8 @@ input{
 }
 button{
     width: 20rem;
-    box-sizing: border-box;
-    padding: 12px 20px;
+    height: 50px;
+    margin-top: 20px;
     border-radius: 5px;
     border-color:hsl(231, 7%, 60%);
     background-color:hsl(234, 29%, 20%) ;
@@ -70,18 +72,18 @@ button:hover{
 }
 
 .successMessageContainer{
-  display:none;
+    display: none;
     margin: auto;
     margin-top: 150px;
     margin-bottom: 20px;
-    width: 20vw;
-    height: 50vh;
+    max-width: 400px;
     border-radius: 30px;
     background-color: white;
     padding: 30px 20px 20px 50px;
     align-items: center;
 
 }
+
 
 
 .attribution { 
@@ -92,12 +94,54 @@ button:hover{
     color: hsl(228, 45%, 44%); 
 }
 
-@media (min-width:500px) {
+@media (max-width:768px) {
+    
     .container{
-        width: 800px;
+        width: 100%;
+        display: flex;
+        height: initial;
+        flex-direction: column-reverse;
+        margin: 0;
     }
     .successMessageContainer{
-        width:400px
+        width:75%;
+        
     }
+    .container div>img{
+       width: 90%;
+    }
+    h1{
+        text-align: justify;
+        margin: 0;
+        font-weight: 700;
+    }
+    ul{
+        list-style-image: url(./assets/images/icon-list.svg);
+        text-align: justify;
+        font-weight: 400;
+        padding-right: 15px;
+    }
+    button{
+        width: 15rem;
+        height: 50px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border-color:hsl(231, 7%, 60%);
+        background-color:hsl(234, 29%, 20%) ;
+        color: white;
+    
+    }
+    input{
+        width: 15rem;
+        box-sizing: border-box;
+        padding: 12px 20px;
+        border-radius: 5px;
+        border-color:hsl(231, 7%, 60%);
+        font-weight: 400;
+        cursor: pointer;  
+    }
+
+
     
 }
