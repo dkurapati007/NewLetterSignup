@@ -21,6 +21,7 @@ This project demonstrates a responsive newsletter signup form created using HTML
 - Responsive Design: Using media queries for different screen sizes.
 
 # Preview Site
+https://newsletter-signup-successmessage.netlify.app/
 
 # Acknowledgments
 - Challenge by Frontend Mentor.
