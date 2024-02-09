@@ -23,7 +23,8 @@ body{
 
 .container div>img{
     width: 310px;
-    padding-top: 30px;   
+    padding-top: 30px; 
+  position: fixed;
 }
 
 h1{
